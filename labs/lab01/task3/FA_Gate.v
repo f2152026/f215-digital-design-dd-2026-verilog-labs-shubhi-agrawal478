@@ -1,6 +1,4 @@
 // FA_Gate.v
-// (Carried forward from Task 2 -- paste in your completed, delay-annotated
-// version.)
 // Gate-level model of a 1-bit full adder, now with explicit gate delays.
 // From this task onward, every gate/assign you write in this lab should
 // have an explicit delay -- it's the default way we'll be writing Verilog
@@ -27,7 +25,6 @@ module FA_Gate(
   output cout
 );
   wire ps, pc1, pc2;
-
   xor #(2) (ps,  a,   b);
   and #(2) (pc1, a,   b);
   xor #(2) (sum, cin, ps);
